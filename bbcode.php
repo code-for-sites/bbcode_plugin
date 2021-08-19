@@ -49,7 +49,7 @@ class bbcode
 		}
 
 		if( $this->allowedTag('img') ){
-			$find[] = '~\[img\](https?://.*?\.(?:jpg|jpeg|gif|png))\[/img\]~s';
+			$find[] = '~\[img\](http?://.*?\.(?:jpg|jpeg|gif|png))\[/img\]~s';
 			$replace[] = '<img src="$1" />';
 		}
 
